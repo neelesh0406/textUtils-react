@@ -56,12 +56,12 @@ export default function TextForm(props) {
         <>
         <div className="container my-5 px-5">
             <h1>{props.heading}</h1>
-            <textarea className="form-control" value={text} onChange={onChangeFunc}  style={props.mode==='light' ? {color: 'black', backgroundColor: 'white'}:{color: 'wheat', backgroundColor: '#132231'}} id="textAreaExample2" rows="8" placeholder="Ente text here..."></textarea>
-            <button className="btn btn-primary my-2 mx-1" onClick={handleUpClick}>Convert to UPPERCASE</button>
-            <button className="btn btn-primary my-2 mx-1" onClick={handleLoClick}>Convert to lowercase</button>
-            <button className="btn btn-primary my-2 mx-1" onClick={handleClearClick}>Clear Text</button>
-            <button className="btn btn-primary my-2 mx-1" onClick={handleRevClick}>Reverse Text</button>
-            <button className="btn btn-primary my-2 mx-1" onClick={handleCapClick}>Capitalize Text</button>
+            <textarea className="form-control" value={text} onChange={onChangeFunc}  style={props.mode==='light' ? {color: 'black', backgroundColor: 'white'}:{color: 'wheat', backgroundColor: props.bg}} id="textAreaExample2" rows="8" placeholder="Ente text here..."></textarea>
+            <button className={`btn btn-${props.btnColor} my-2 mx-1`} onClick={handleUpClick}>Convert to UPPERCASE</button>
+            <button className={`btn btn-${props.btnColor} my-2 mx-1`} onClick={handleLoClick}>Convert to lowercase</button>
+            <button className={`btn btn-${props.btnColor} my-2 mx-1`} onClick={handleClearClick}>Clear Text</button>
+            <button className={`btn btn-${props.btnColor} my-2 mx-1`} onClick={handleRevClick}>Reverse Text</button>
+            <button className={`btn btn-${props.btnColor} my-2 mx-1`} onClick={handleCapClick}>Capitalize Text</button>
         </div>
         <div className="container px-5">
             <h2>Text Information</h2>

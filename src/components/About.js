@@ -6,7 +6,7 @@ export default function About(props) {
     if(props.mode==='dark'){
         myStyle = {
             color: 'white',
-            backgroundColor: '#132231'
+            backgroundColor: props.bg
         }
     }else{
         myStyle = {
