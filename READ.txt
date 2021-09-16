@@ -1,0 +1,3 @@
+Don't forget to 
+-> npm uninstall gh-pages
+remove homepage, predeploy, deploy from package.json

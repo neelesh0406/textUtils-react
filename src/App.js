@@ -21,13 +21,13 @@ function App() {
       // document.body.style.backgroundColor = '#132231';
       document.body.style.backgroundColor = bg;
       showAlert("Switched to dark mode", "success");
-      document.title = "TextUtils - Dark mode";
+      // document.title = "TextUtils - Dark mode";
     } else {
       setmode('light');
       document.body.style.color = 'black';
       document.body.style.backgroundColor = 'white';
       showAlert("Switched to light mode", "success");
-      document.title = "TextUtils - Light mode";
+      // document.title = "TextUtils - Light mode";
     }
   }
 
